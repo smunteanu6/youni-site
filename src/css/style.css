@@ -1,0 +1,43 @@
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+	--plum: #870d58;
+	--plum-light: #ba2381;
+	--plum-lighter: #ca4196;
+	--purple: #4c2162;
+	--purple-dark: #30143d;
+}
+
+body {
+	width: 100%;
+	background-color: var(--purple);
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+h1,h2 {
+	font-weight: 800;
+}
+
+*:not(h1,h2) {
+	font-weight: 600;
+}
+
+.slide:not(.multiple-slides), .multiple-slides > * {
+	padding: 5em;
+	gap: 5em;
+	box-sizing: border-box;
+	font-size: large;
+	z-index: 5;
+	color: white;
+}
+
+.high-slide {
+	background-color: var(--plum-light);
+	box-shadow: 0 0em 4em .1em black;
+}
+
+.multiple-slides > :not(:first-child) {
+	border-top: 2px solid var(--plum-lighter);
+}

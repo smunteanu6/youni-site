@@ -1,0 +1,76 @@
+
+#speakers-and-guests {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 1em;
+  margin-top: 1em;
+}
+
+#speakers-and-guests > div {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  width: max(45%, 25em);
+  gap: 1em;
+  /* background-color: rgba(255, 255, 255, .2); */
+  padding: 1em;
+}
+
+#speakers-and-guests > div > img {
+  width: 8em;
+  height: 8em;
+}
+
+:has(#location-and-date) {
+  position: relative;
+}
+
+:has(#location-and-date)::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .03;
+  background-image: url(../img/almaty-management-university.jpg); background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+#location-and-date > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 20em;
+  height: 30em;
+  padding: 4em;
+  gap: 2em;
+  border-radius: 2em;
+  background-color: var(--plum-light);
+  box-shadow: 0 0 2em 1px rgba(0, 0, 0, .5);
+  text-align: center;
+  transition: transform .25s, background-color .25s;
+  font-size: large;
+  text-align: center;
+  line-height: 2em;
+}
+
+#location-and-date > div:hover {
+  background-color: var(--plum-lighter);
+  transform: scale(1.05);
+  cursor: pointer;  
+}
+
+#location-and-date > div > img {
+  height: 5em;
+}
+
+#location-and-date > div > h2 {
+  margin: 0;
+}
