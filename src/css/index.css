@@ -1,13 +1,12 @@
 
-#speakers-and-guests {
+.people-list > div {
+  margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 1em;
-  margin-top: 1em;
 }
 
-#speakers-and-guests > div {
+.people-list > div > div {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -17,7 +16,7 @@
   padding: 1em;
 }
 
-#speakers-and-guests > div > img {
+.people-list > div > div > img {
   width: 8em;
   height: 8em;
 }
