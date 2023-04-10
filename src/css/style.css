@@ -1,3 +1,4 @@
+
 /* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
@@ -24,6 +25,7 @@ h1,h2 {
 	font-weight: 600;
 }
 
+
 .slide:not(.multiple-slides), .multiple-slides > * {
 	padding: 5em;
 	gap: 5em;
@@ -33,11 +35,50 @@ h1,h2 {
 	color: white;
 }
 
+
 .high-slide {
 	background-color: var(--plum-light);
 	box-shadow: 0 0em 4em .1em black;
 }
 
+.low-slide {
+	background: none;
+}
+
+.low-slide > .people-list > div {
+	background-color: var(--plum-light);
+}
+
+.low-slide > .people-list > div {
+	border-radius: 1em;
+	box-shadow: 0 0 2em .1em rgba(0, 0, 0, .4);
+}
+
+
+.people-list {
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.people-list > div {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  width: max(45%, 25em);
+  padding: 1em;
+  gap: 1em;
+}
+
+.people-list > div > img {
+  width: 8em;
+  height: 8em;
+}
+
+
 .multiple-slides > :not(:first-child) {
-	border-top: 2px solid var(--plum-lighter);
+	margin-top: 2em;
+	/* border-top: 2px solid var(--plum-lighter); */
 }

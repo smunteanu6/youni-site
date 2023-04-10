@@ -1,26 +1,4 @@
 
-.people-list > div {
-  margin-top: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.people-list > div > div {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  width: max(45%, 25em);
-  gap: 1em;
-  /* background-color: rgba(255, 255, 255, .2); */
-  padding: 1em;
-}
-
-.people-list > div > div > img {
-  width: 8em;
-  height: 8em;
-}
-
 :has(#location-and-date) {
   position: relative;
 }
@@ -34,7 +12,7 @@
   width: 100%;
   height: 100%;
   opacity: .03;
-  background-image: url(../img/almaty-management-university.jpg); background-repeat: no-repeat;
+  /* background-image: url(../img/almaty-management-university.jpg); background-repeat: no-repeat; */
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
