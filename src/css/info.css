@@ -1,0 +1,17 @@
+#ambassador-responsibilities {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+:has(#ambassador-responsibilities) > h1 {
+  margin-bottom: 2em;
+}
+
+#ambassador-responsibilities > * {
+  padding: 1em 2em;
+}
+
+#ambassador-responsibilities > :nth-child(odd) {
+  background-color: rgba(0, 0, 0, .2);
+}

@@ -19,7 +19,7 @@
   z-index: -1;
 }
 
-#location-and-date > div {
+#location-and-date > * {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,18 +36,20 @@
   font-size: large;
   text-align: center;
   line-height: 2em;
+  text-decoration: none;
+  color: white;
 }
 
-#location-and-date > div:hover {
+#location-and-date > *:hover {
   background-color: var(--plum-lighter);
   transform: scale(1.05);
   cursor: pointer;  
 }
 
-#location-and-date > div > img {
+#location-and-date > * > img {
   height: 5em;
 }
 
-#location-and-date > div > h2 {
+#location-and-date > * > h2 {
   margin: 0;
 }
