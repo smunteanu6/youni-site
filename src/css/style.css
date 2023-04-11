@@ -46,14 +46,13 @@ h1,h2 {
 }
 
 .low-slide > .people-list > div {
+	box-shadow: 0 0 2em .1em rgba(0, 0, 0, .4);
 	background-color: var(--plum-light);
 }
 
-.low-slide > .people-list > div {
-	border-radius: 1em;
-	box-shadow: 0 0 2em .1em rgba(0, 0, 0, .4);
+.high-slide > .people-list > div {
+	background-color: var(--plum-lighter);
 }
-
 
 .people-list {
   margin-top: 3em;
@@ -64,6 +63,7 @@ h1,h2 {
 }
 
 .people-list > div {
+	border-radius: 1em;
   display: flex;
   align-items: center;
   font-weight: 700;
